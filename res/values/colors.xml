@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#900</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    
+    <color name="setting_label">#333333</color>
+    <color name="setting_label_tips">#999999</color>
+    <color name="setting_line">#D9D9D9</color>
+	<color name="setting_item_selected">#FAF8F9</color>
+
+	<color name="date">#999999</color>
+	<color name="line">#e6e5e5</color>
+	
+	<color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    
+    <color name="listview_header">#E3E3E3</color>
+    <color name="listview_footer">#E3E3E3</color>
+
+    <color name="default_text">#ff454545</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+
+	<!-- Login -->
+	<color name="login_plat_bg">#f4f2f2</color>
+	<color name="no_comment_tv">#b7151f</color>
+	<color name="no_login_pressed">#e6eceb</color>
+	
+	<!-- ShareSDK -->
+    <color name="share_cancel_btn_pressed">#e70505</color>
+    
+    <!-- headline -->
+    <color name="article_color_bg_normal">#e5e4e4</color>
+    <color name="article_color_bg_pressed">#e5c8ca</color>
+</resources>

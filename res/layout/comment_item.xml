@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:layout_marginBottom="10dip"
+    android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res/com.twentyfirstcbh.richunews"
+    android:gravity="center_vertical">
+    
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip">
+        <com.twentyfirstcbh.richunews.widget.CircleImageView 
+            android:id="@+id/circleImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/about_icon"
+            app:border_color="#FF000000"
+            app:border_width="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dip"/>
+        
+        <LinearLayout android:id="@+id/ll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/circleImageView">
+            <TextView android:id="@+id/name_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城管去哪了"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="8dip"/>
+            <TextView android:id="@+id/item_time_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8小时前"
+                android:textColor="@android:color/darker_gray"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <TextView android:id="@+id/count_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1714"
+                android:textColor="@android:color/darker_gray"/>
+            <ImageView android:id="@+id/praise_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/article_over"/>
+        </LinearLayout>
+        
+        <TextView android:id="@+id/content_TextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="多久发了啥地方就是老地方经理说对方就类似的纠纷类似的纠纷类似的纠纷来说就地方老师"
+		        android:layout_toRightOf="@id/circleImageView"
+		        android:layout_below="@id/circleImageView"
+		        android:layout_marginTop="5dip"/>
+    </RelativeLayout>
+	
+</LinearLayout>

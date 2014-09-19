@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- 头像部分 -->
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip">
+        <ImageButton android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/setting"/>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+			android:layout_centerHorizontal="true"
+			android:gravity="center">
+            <com.twentyfirstcbh.richunews.widget.CircleImageView android:id="@+id/head_img"
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/head_img"/>
+            <TextView android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fdsfjklsdfsd"/>
+        </LinearLayout>
+        <ImageButton android:id="@+id/cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/cancel_column"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    <!-- 结束 -->
+    
+    <View android:id="@+id/first_line"
+        style="@style/subscribe_seperate_line" 
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"/>
+    
+    <LinearLayout android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       	android:orientation="horizontal"
+       	android:gravity="center"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip">
+        <FrameLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <ImageView android:id="@+id/comment_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/comment_count"/>
+        <TextView android:id="@+id/count_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="11dip"
+            android:layout_marginRight="25dip"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="231"/>
+        </FrameLayout>
+        
+        <ImageView android:id="@+id/collection_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/collection"/>
+        
+        <ImageView android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/search"/>
+        
+        <ImageView android:id="@+id/offline_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:src="@drawable/off_line"/>
+    </LinearLayout>
+    
+    <View
+        style="@style/subscribe_seperate_line" 
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"/>
+    
+    <!-- 栏目 -->
+    <GridView
+        android:id="@+id/GridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px"
+                android:layout_marginLeft="15dip"
+        		android:layout_marginRight="15dip"/>
+    <LinearLayout android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        
+        <com.twentyfirstcbh.richunews.widget.DragGrid
+                android:id="@+id/userGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:gravity="center">
+            <View
+		        android:layout_width="wrap_content"
+		        android:layout_height="0.5dip"
+		        android:layout_weight="1"
+		        android:background="@color/subscribe_seperate_line" />
+            <TextView
+                android:id="@+id/more_category_text"
+                style="@style/subscribe_more_tip_text"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:text="@string/sort_column" />
+            <View
+		        android:layout_width="wrap_content"
+		        android:layout_height="0.5dip"
+		        android:layout_weight="1"
+		        android:background="@color/subscribe_seperate_line" />
+         </LinearLayout>
+
+            <com.twentyfirstcbh.richunews.widget.OtherGridView
+                android:id="@+id/otherGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px" />
+    </LinearLayout>
+    <!-- 栏目结束 -->
+    
+    <ImageButton android:id="@+id/add_column"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="12dip"
+        android:background="@drawable/add_column"/>
+    <Button android:id="@+id/add_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_ok"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:visibility="gone"/>
+</LinearLayout>

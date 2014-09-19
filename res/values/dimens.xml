@@ -1,0 +1,22 @@
+<resources>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    
+    <dimen name="setting_label">20sp</dimen>
+    <dimen name="setting_label_tips">16sp</dimen>
+	
+    <dimen name="top_back_margin_left">15dp</dimen>
+    <dimen name="top_title_size">22sp</dimen>
+    
+    <dimen name="favoritie_title_size">18sp</dimen>
+    <dimen name="favoritie_date_size">16sp</dimen>
+    
+    <dimen name="content_article_element_margin">10dp</dimen>
+    <dimen name="content_atlas_element_margin">15dp</dimen>
+    
+    <dimen name="content_category_size">17sp</dimen>
+    <dimen name="content_title_size">20sp</dimen>
+    <dimen name="content_desc_size">14dp</dimen>
+</resources>

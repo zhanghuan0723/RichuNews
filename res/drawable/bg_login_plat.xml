@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 实心 -->
+    <solid android:color="@color/login_plat_bg" />
+
+    <padding
+        android:bottom="40dp"
+        android:top="40dp" />
+
+</shape>

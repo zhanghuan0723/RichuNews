@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">日出</string>
+    <string name="exit_app">再按一次退出日出</string>
+    <string name="sort_column">点击增删 拖拽排序</string>
+    <string name="add_ok">完成</string>
+
+    <!-- Login -->
+    <string name="login">登录</string>
+    <string name="qq_login">腾讯QQ登录</string>
+    <string name="wb_login">新浪微博登录</string>
+    <string name="no_login">就不登录</string>
+    <string name="no_comment">只看不评</string>
+
+    <!-- Favoritie -->
+    <string name="favoritie">收藏</string>
+
+    <!-- Search -->
+    <string name="search">搜索</string>
+
+    <!-- Atlas -->
+    <string name="recommend_atlas">推荐图集</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+</resources>
