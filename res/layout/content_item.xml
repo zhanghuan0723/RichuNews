@@ -34,16 +34,14 @@
         android:id="@+id/titleTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="习近平访问斯里兰卡 获赠郑和碑拓片"
         android:textSize="@dimen/content_title_size" />
 
     <TextView
-        android:id="@+id/digestTV"
+        android:id="@+id/descTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/content_article_element_margin"
         android:layout_marginTop="@dimen/content_article_element_margin"
-        android:text="斯里兰卡总统拉贾帕克萨16日在科伦坡为中国国家主席习近平举行盛大欢迎仪式。两国元首在亲切友好气氛中举行会谈，高度评价中斯友谊，共同规划两国合作，宣布启动中斯自由贸易谈判，推动中斯战略合作伙伴关系深入发展。"
         android:textSize="@dimen/content_desc_size" />
 
     <RelativeLayout
@@ -52,13 +50,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/content_article_element_margin"
         android:layout_marginTop="@dimen/content_article_element_margin"
-        android:orientation="horizontal"
         android:visibility="gone" />
 
     <TextView
         android:id="@+id/dateTV"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="09-17 16:37" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

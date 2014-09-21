@@ -8,25 +8,3 @@ desc：摘要
 origurl：源自哪个url
 inputtime：录入时间
 photo：只有当type=image才有值，表示图集的意思，是一个数组。里面的参数中，thumb代表图片，desc代表图片对应的文字解释
-
-RichuHttpClient.get(Constant.RICHU_CONFIG, new BaseJsonHttpResponseHandler<Headers>() {
-
-			@Override
-			public void onSuccess(int statusCode, Header[] headers, String rawJsonResponse, Headers response) {
-				// if (response != null)
-				// titleTV.setText(response.getXRequestId());
-			}
-
-			@Override
-			public void onFailure(int statusCode, Header[] headers, Throwable throwable, String rawJsonData, Headers errorResponse) {
-
-			}
-
-			@Override
-			protected Headers parseResponse(String rawJsonData, boolean isFailure) throws Throwable {
-				JSONObject resJO = new JSONObject(rawJsonData);
-				String headers = resJO.get("headers").toString();
-				Gson gson = new Gson();
-				return gson.fromJson(headers, Headers.class);
-			}
-		});

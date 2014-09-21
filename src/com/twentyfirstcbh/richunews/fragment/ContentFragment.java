@@ -79,6 +79,7 @@ public class ContentFragment extends BaseFragment implements OnPageChangeListene
 		mViewPager = (ViewPager) v.findViewById(R.id.mainVP);
 		pagerAdapter = new ContentPagerAdapter(getActivity().getSupportFragmentManager(), categoryList);
 		mViewPager.setAdapter(pagerAdapter);
+		mViewPager.setOffscreenPageLimit(0);
 		mViewPager.setOnPageChangeListener(this);
 
 		subHeadView = (HorizontalScrollView) v.findViewById(R.id.subHeadView);

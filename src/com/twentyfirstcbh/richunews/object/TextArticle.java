@@ -1,5 +1,6 @@
 package com.twentyfirstcbh.richunews.object;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TextArticle extends BaseArticle {
@@ -27,6 +28,11 @@ public class TextArticle extends BaseArticle {
 	 * 评论数
 	 */
 	private int commentCount;
+	
+	/**
+	 * 图集
+	 */
+	private ArrayList<Photo> photos;
 
 	public String getContent() {
 		return content;
@@ -66,6 +72,14 @@ public class TextArticle extends BaseArticle {
 
 	public void setCommentCount(int commentCount) {
 		this.commentCount = commentCount;
+	}
+
+	public ArrayList<Photo> getPhotos() {
+		return photos;
+	}
+
+	public void setPhotos(ArrayList<Photo> photos) {
+		this.photos = photos;
 	}
 
 }

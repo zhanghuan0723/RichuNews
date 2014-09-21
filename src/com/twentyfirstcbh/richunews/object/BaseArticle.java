@@ -36,6 +36,11 @@ public class BaseArticle implements Serializable {
 	private String thumbUrl;
 	
 	/**
+	 * 图片描述
+	 */
+	private String thumbDesc;
+	
+	/**
 	 * 作者
 	 */
 	private String author;
@@ -93,6 +98,14 @@ public class BaseArticle implements Serializable {
 
 	public void setThumbUrl(String thumbUrl) {
 		this.thumbUrl = thumbUrl;
+	}
+	
+	public String getThumbDesc() {
+		return thumbDesc;
+	}
+
+	public void setThumbDesc(String thumbDesc) {
+		this.thumbDesc = thumbDesc;
 	}
 
 	public String getAuthor() {
